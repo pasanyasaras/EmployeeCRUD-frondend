@@ -1,7 +1,8 @@
 
 
 <h2 class="text-center">Employee List</h2>
-<table class="table table-striped text-center ">
+<div class="table-responsive-xl">
+<table class="table table-striped text-center">
     <thead>
         <tr>
             <th>First Name</th>
@@ -16,12 +17,12 @@
             <td>{{employee.lastName}}</td>
             <td>{{employee.emailId}}</td>
             <td>
-                <button (click) = "updateEmployee(employee.id)" class="btn btn-info">
-                   
-                    Edit</button>
+                <button (click) = "updateEmployee(employee.id)" class="btn btn-info" style="width: 70px;">Edit</button>
+                <button (click) = "deleteEmployee(employee.id)" class="btn btn-danger" style="width: 70px; ">Delete</button>
             </td>
         </tr>
     </tbody>
 </table>
+</div>
 
 
